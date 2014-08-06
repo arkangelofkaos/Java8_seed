@@ -16,5 +16,5 @@ repositories {
 }
 
 dependencies {
-    testCompile 'org.testng:testng:5.7'
+    testCompile 'org.testng:testng:6.+'
 }
