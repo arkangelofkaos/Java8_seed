@@ -2,7 +2,19 @@ apply plugin: 'java'
 apply plugin: 'idea'
 
 idea {
+    project {
+        jdkName = '1.8'
+        languageLevel = '1.8'
+    }
     module {
         excludeDirs += file('.idea')
     }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'org.testng:testng:5.7'
 }
